@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgressBar</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            background-color: #ffe;
+        }
+        .wrapper {
+            max-width: 600px;
+            margin: 100px auto 0 auto;
+        }
+        .rounded {
+            width: 320px;
+            height: 320px;
+            margin-bottom: 40px;
+            border-radius: 50%;
+            background: conic-gradient(
+                #F6C049 45deg,
+                #9BD48E 45deg 135deg,
+                #54C3FF 135deg 300deg,
+                #FF8D8D 300deg 320deg,
+                #FF5A5A 320deg
+            );
+            mask-image: radial-gradient(transparent 50%, black 50%);
+        }
+        .square {
+            width: 600px;
+            height: 50px;
+            border-radius: 32px;
+            background: linear-gradient(
+                90deg, 
+                #F6C049 15.2%,
+                #9BD48E 15.2% 45%,
+                #54C3FF 45% 75%,
+                #FF8D8D 75% 80%,
+                #FF5A5A 80%
+            );
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="rounded"></div>
+        <div class="square"></div>
+    </div>
+</body>
+</html>
